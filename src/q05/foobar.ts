@@ -3,8 +3,9 @@ if (Number.isNaN(num)||num<1||!Number.isInteger(num))
 {
   console.log('Invalid Input')
 }
-
-for (let i = 1; i<num+1;i++)
+else
+{
+  for (let i = 1; i<num+1;i++)
 {
   if(i%3 ==0 && i%7 ==0)
   {
@@ -22,4 +23,5 @@ for (let i = 1; i<num+1;i++)
   {
     console.log(String(i))
   }
+}
 }
