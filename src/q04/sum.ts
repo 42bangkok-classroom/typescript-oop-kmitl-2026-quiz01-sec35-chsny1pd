@@ -5,7 +5,7 @@ if (input === undefined || input.trim() === '' )
 }
 else
 {
-  const num = +input
+  const num = parseInt(input)
 if (Number.isNaN(num)||num<=0)
 {
   console.log('Invalid Input')
