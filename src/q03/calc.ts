@@ -4,22 +4,22 @@ const b = +process.argv[4]
 
 if (Number.isNaN(a)||Number.isNaN(b))
 {
-    console.log('Invalid Input')
+    console.log('Invalid input')
 }
 else{
     switch(op)
     {
     case 'add' :
         const addresult = a+b
-        console.log(addresult)
+        console.log(Number(addresult))
         break;
     case 'sub' :
         const subresult = a-b
-        console.log(subresult)
+        console.log(Number(subresult))
         break;
     case 'mul' :
         const mulresult = a*b
-        console.log(mulresult)
+        console.log(Number(mulresult))
         break;
     case 'div' :
         if(b==0)
@@ -33,7 +33,7 @@ else{
         console.log(divresult)
         break;
         }
-    default : console.log('Invalid Operation')
+    default : console.log('Invalid operator')
     }
 }
 
