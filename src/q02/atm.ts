@@ -1,7 +1,7 @@
 const balance = +process.argv[2]
 const amount = +process.argv[3]
 
-if (Number.isNaN(balance)||balance<0||amount<0)
+if (Number.isNaN(balance)||Number.isNaN(amount)||balance<0||amount<0||String(balance)==''||String(amount)=='')
 {
   console.log('Invalid Input')
 }
