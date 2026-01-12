@@ -1,5 +1,9 @@
 const score = +process.argv[2]
-if (Number.isNaN(score)||score<0||score>100||'')
+if (Number.isNaN(score)||score<0||score>100)
+{
+  console.log('Invalid Input')
+}
+else if(String(score) == '')
 {
   console.log('Invalid Input')
 }
