@@ -1,10 +1,12 @@
 const input = +process.argv[2]
 
-if(Number.isNaN(input) || input<=0)
+if(Number.isNaN(input) || input<=0||!Number.isInteger(input))
 {
   console.log('Invalid Input')
 }
-for(let i = 0;i<input;i++)
+else
+{
+  for(let i = 0;i<input;i++)
 {
   let result = ''
   for(let k = 1;k<=i;k++)
@@ -16,4 +18,5 @@ for(let i = 0;i<input;i++)
     result += '*'
   }
   console.log(result)
+}
 }

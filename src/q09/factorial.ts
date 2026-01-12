@@ -1,10 +1,11 @@
 const num = +process.argv[2]
-if (Number.isNaN(num)||num<0)
+if (Number.isNaN(num)||num<0||!Number.isInteger(num))
 {
   console.log('Invalid Input')
 }
-
-let result = 1
+else
+{
+    let result = 1
 if (num == 0)
 {
  console.log(result)
@@ -15,5 +16,6 @@ else
     {
         result *= i
     }
-    console.log(result)
+    console.log(String(result))
+}
 }
