@@ -1,5 +1,5 @@
 const num = +process.argv[2]
-if (Number.isNaN(num)||num<1)
+if (Number.isNaN(num)||num<1||!Number.isInteger(num))
 {
   console.log('Invalid Input')
 }
@@ -20,6 +20,6 @@ for (let i = 1; i<num+1;i++)
   }
   else
   {
-    console.log(i)
+    console.log(String(i))
   }
 }
