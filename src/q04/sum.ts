@@ -9,4 +9,4 @@ for (let i = 1; i<num+1;i++)
 {
   result += i
 }
-console.log('Sum :',result)
+console.log('Sum :',Number(result))
