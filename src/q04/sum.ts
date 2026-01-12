@@ -1,7 +1,7 @@
 const input = process.argv[2]
 if (input === undefined || input.trim() === '' )
 {
- console.log('Invalid input')
+ console.log('Invalid Input')
 }
 else
 {
@@ -16,5 +16,5 @@ for (let i = 1; i<num+1;i++)
 {
   result += i
 }
-console.log('Sum :',String(result))
+console.log('Sum:',String(result))
 }
