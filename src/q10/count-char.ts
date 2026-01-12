@@ -4,7 +4,13 @@ let letters = 0;
 let digits = 0;
 let others = 0;
 
-for (const char of input) {
+if (input === undefined || input.trim() === '')
+{
+ console.log('')
+}
+else
+{
+  for (const char of input) {
   if (/[a-zA-Z]/.test(char)) 
   {
     letters++;
@@ -22,3 +28,4 @@ for (const char of input) {
 console.log(`Letters: ${letters}`);
 console.log(`Digits: ${digits}`);
 console.log(`Others: ${others}`);
+}
