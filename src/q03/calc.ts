@@ -1,7 +1,14 @@
 const op = process.argv[2]
-const a = +process.argv[3]
-const b = +process.argv[4]
-
+const input1 = process.argv[3]
+const input2 = process.argv[4]
+if (input1 === undefined || input1.trim() === '' ||input2 === undefined || input2.trim() === '')
+{
+ console.log('Invalid input')
+}
+else
+{
+  const a = +input1
+  const b = +input2
 if (Number.isNaN(a)||Number.isNaN(b))
 {
     console.log('Invalid input')
@@ -11,15 +18,15 @@ else{
     {
     case 'add' :
         const addresult = a+b
-        console.log(Number(addresult))
+        console.log(String(addresult))
         break;
     case 'sub' :
         const subresult = a-b
-        console.log(Number(subresult))
+        console.log(String(subresult))
         break;
     case 'mul' :
         const mulresult = a*b
-        console.log(Number(mulresult))
+        console.log(String(mulresult))
         break;
     case 'div' :
         if(b==0)
@@ -30,10 +37,10 @@ else{
         else
         {
         const divresult = a/b
-        console.log(divresult)
+        console.log(String(divresult))
         break;
         }
     default : console.log('Invalid operator')
     }
 }
-
+}
