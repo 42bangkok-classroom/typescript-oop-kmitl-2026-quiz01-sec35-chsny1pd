@@ -1,20 +1,19 @@
-const input = process.argv[2]
-const input2 = parseInt(input)
+const input = +process.argv[2]
 
-if(Number.isNaN(input) || input2<=0)
+if(Number.isNaN(input) || input<=0)
 {
   console.log('Invalid Input')
 }
-for(let i = 1;i<=input2;i++)
+for(let i = 1;i<=input;i++)
 {
   let result = ''
-  for(let j = 1;j<=input2;j++)
+  for(let j = 1;j<=input;j++)
   {
-    if(i==1 ||i==input2){
+    if(i==1 ||i==input){
     result += 'x'
     }
     else {
-      if(j==1 ||j==input2){
+      if(j==1 ||j==input){
       result += 'x'
       }
       else {
