@@ -41,14 +41,14 @@ else{
     if (/[a-zA-Z]/.test(char)){
       letters++;
     }
-    if (/[0-9]/.test(char)){
+    else if (/[0-9]/.test(char)){
       digits++;
     }
     else{
       others++;
     }
   }
+console.log('Letters:',String(letters))
+console.log('Digits:',String(digits))
+console.log('Others:',String(others))
 }
-console.log('Letters: ',String(letters))
-console.log('Digits: ',String(digits))
-console.log('Others: ',String(others))
