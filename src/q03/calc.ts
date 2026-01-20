@@ -47,7 +47,7 @@
 const input1 = process.argv[2]
 const input2 = process.argv[3]
 const input3 = process.argv[4]
-if(input1 === undefined||input1.trim()==''||input2 === undefined||input2.trim()==''||input3 === undefined||input3.trim()==''){
+if(input2 === undefined||input2.trim()==''||input3 === undefined||input3.trim()==''){
     console.log('Invalid input')
 }
 else{
@@ -72,7 +72,8 @@ else{
         break;
         case 'div' : 
         if(b == 0){
-            console.log('Invaid input')
+            console.log('Invalid input')
+            break;
         }
         else{
             const divresult = a/b
