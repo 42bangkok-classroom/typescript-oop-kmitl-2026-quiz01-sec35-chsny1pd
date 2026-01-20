@@ -1,30 +1,48 @@
-const input = process.argv[2]
+// const input = process.argv[2]
 
-if (input === undefined || input.trim() === '')
-{
- console.log('Invalid Input')
-}
-else
-{
-    const num = +input
-if (Number.isNaN(num)||num<0||!Number.isInteger(num))
-{
+// if (input === undefined || input.trim() === '')
+// {
+//  console.log('Invalid Input')
+// }
+// else
+// {
+//     const num = +input
+// if (Number.isNaN(num)||num<0||!Number.isInteger(num))
+// {
+//   console.log('Invalid Input')
+// }
+// else
+// {
+//     let result = 1
+// if (num == 0)
+// {
+//  console.log(String(result))
+// }
+// else
+// {
+//     for (let i = 1; i<num+1;i++)
+//     {
+//         result *= i
+//     }
+//     console.log(String(result))
+// }
+// }
+// }
+
+const input = process.argv[2]
+if(input === undefined || input.trim()==''){
   console.log('Invalid Input')
 }
-else
-{
-    let result = 1
-if (num == 0)
-{
- console.log(String(result))
-}
-else
-{
-    for (let i = 1; i<num+1;i++)
-    {
-        result *= i
+else{
+  const num = +input
+  if(isNaN(num)||num<=0||!Number.isInteger(num)){
+    console.log('Invalid Input')
+  }
+  else{
+    let n = 1
+    for(let i = 1 ; i <= num ; i++){
+      n *= i
     }
-    console.log(String(result))
-}
-}
+    console.log(n)
+  }
 }
