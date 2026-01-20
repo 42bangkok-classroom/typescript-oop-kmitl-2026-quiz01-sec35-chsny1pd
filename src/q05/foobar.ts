@@ -31,18 +31,18 @@ if(input === undefined||input.trim()==''){
 }
 else{
   const num = +input
-  if(isNaN(num)||num<0||!Number.isInteger(num)){
+  if(isNaN(num)||num<=0||!Number.isInteger(num)){
     console.log('Invalid Input')
   }
   else{
-    for(let i = 0 ; i <= num ; i++){
-      if(num%7==0 &&num%3==0){
+    for(let i = 1 ; i <= num ; i++){
+      if(i%7==0 &&i%3==0){
       console.log('FooBar')
       }
-      else if(num%3==0){
+      else if(i%3==0){
       console.log('Foo')
       }
-      else if(num%7==0 ){
+      else if(i%7==0 ){
       console.log('Bar')
       }
       else{

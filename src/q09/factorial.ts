@@ -38,11 +38,14 @@ else{
   if(isNaN(num)||num<=0||!Number.isInteger(num)){
     console.log('Invalid Input')
   }
+  else if(num == 0){
+    console.log(String(1))
+  }
   else{
     let n = 1
     for(let i = 1 ; i <= num ; i++){
       n *= i
     }
-    console.log(n)
+    console.log(String(n))
   }
 }
