@@ -22,11 +22,11 @@
 // }
 const input = process.argv[2]
 if(input === undefined||input.trim()==''){
-  console.log('Invaid Input')
+  console.log('Invalid Input')
 }
 else{
   const num = +input
-  if(isNaN(num)||num<0){
+  if(isNaN(num)||num<=0||!Number.isInteger(num)){
     console.log('Invalid Input')
   }
   else{

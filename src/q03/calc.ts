@@ -48,38 +48,38 @@ const input1 = process.argv[2]
 const input2 = process.argv[3]
 const input3 = process.argv[4]
 if(input1 === undefined||input1.trim()==''||input2 === undefined||input2.trim()==''||input3 === undefined||input3.trim()==''){
-    console.log('Invalid Input')
+    console.log('Invalid input')
 }
 else{
     const a = +input2
     const b = +input3
     if(isNaN(a)||isNaN(b)){
-        console.log('Invalid Input')
+        console.log('Invalid input')
     }
     else{
         switch(input1){
         case 'add' : 
         const addresult = a+b
-        console.log(addresult) 
+        console.log(String(addresult)) 
         break;
         case 'sub' : 
         const subresult = a-b
-        console.log(subresult) 
+        console.log(String(subresult)) 
         break;
         case 'mul' : 
         const mulresult = a*b
-        console.log(mulresult) 
+        console.log(String(mulresult)) 
         break;
         case 'div' : 
         if(b == 0){
-            console.log('Invaid Input')
+            console.log('Invaid input')
         }
         else{
             const divresult = a/b
-            console.log(divresult) 
+            console.log(String(divresult)) 
             break;
         }
-        default : console.log('Invalid Input')
+        default : console.log('Invalid operator')
     }
     }
 }
