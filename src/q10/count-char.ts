@@ -34,7 +34,7 @@ let letters = 0
 let digits = 0
 let others = 0
 if(input === undefined || input.trim()==''){
-  console.log('Invalid Input')
+  console.log('')
 }
 else{
   for (const char of input){
@@ -49,6 +49,6 @@ else{
     }
   }
 }
-console.log('Letters: ',letters)
-console.log('Digits: ',digits)
-console.log('Others: ',others)
+console.log('Letters: ',String(letters))
+console.log('Digits: ',String(digits))
+console.log('Others: ',String(others))

@@ -35,7 +35,7 @@ if(input === undefined || input.trim()==''){
 }
 else{
   const num = +input
-  if(isNaN(num)||num<=0||!Number.isInteger(num)){
+  if(isNaN(num)||num<0||!Number.isInteger(num)){
     console.log('Invalid Input')
   }
   else if(num == 0){
