@@ -1,33 +1,57 @@
+// const input = process.argv[2]
+// if (input === undefined || input.trim() === '')
+// {
+//  console.log('Invalid Input')
+// }
+// else 
+// {
+//   const score = +input
+//   if(Number.isNaN(score)||score<0||score>100)
+//   {
+//     console.log('Invalid Input')
+//   }
+// else if(score>=80)
+// {
+//   console.log('Grade is A')
+// }
+// else if(score>=70)
+// {
+//   console.log('Grade is B')
+// }
+// else if(score>=60)
+// {
+//   console.log('Grade is C')
+// }
+// else if(score>=50)
+// {
+//   console.log('Grade is D')
+// }
+// else 
+// {
+//   console.log('Grade is F')
+// }
+// }
 const input = process.argv[2]
-if (input === undefined || input.trim() === '')
-{
- console.log('Invalid Input')
+if (input === undefined || input.trim() == ""){
+  console.log('Invalid Input')
 }
-else 
-{
-  const score = +input
-  if(Number.isNaN(score)||score<0||score>100)
-  {
-    console.log('Invalid Input')
-  }
-else if(score>=80)
-{
+
+const score = +input
+if (isNaN(score)||score<0||score>100){
+  console.log('Invalid Input')
+}
+else if(score>=80){
   console.log('Grade is A')
 }
-else if(score>=70)
-{
+else if(score>=70){
   console.log('Grade is B')
 }
-else if(score>=60)
-{
+else if(score>=60){
   console.log('Grade is C')
 }
-else if(score>=50)
-{
+else if(score>=50){
   console.log('Grade is D')
 }
-else 
-{
+else{
   console.log('Grade is F')
-}
 }
