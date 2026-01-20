@@ -36,7 +36,8 @@ if (input === undefined || input.trim() == ""){
   console.log('Invalid Input')
 }
 
-const score = +input
+else{
+  const score = +input
 if (isNaN(score)||score<0||score>100){
   console.log('Invalid Input')
 }
@@ -54,4 +55,6 @@ else if(score>=50){
 }
 else{
   console.log('Grade is F')
+}
+
 }

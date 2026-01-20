@@ -30,8 +30,9 @@ const input2 = process.argv[3]
 if (input1 === undefined || input1.trim()==''||input2 === undefined || input2.trim()==''){
   console.log('Invalid Input')
 }
-const amount = +input1
-const balance = +input2
+else{
+  const amount = +input2
+const balance = +input1
 
 if(isNaN(amount)||amount<0||isNaN(balance)||balance<0){
   console.log('Invalid Input')
@@ -44,4 +45,5 @@ else if(amount>5000){
 }
 else{
   console.log('Withdrawal approved')
+}
 }
